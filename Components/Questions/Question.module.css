@@ -1,0 +1,122 @@
+.container {
+  position: relative;
+  padding: 4% 10%;
+  background-color: #15121b;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Blue glow effect */
+.container::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: -15%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.35), transparent 70%);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+/* Ensure content sits above the glow */
+.upper_content,
+.middle_content,
+.lower_content {
+  position: relative;
+  z-index: 1;
+}
+
+.upper_content{
+    text-align: center;
+    margin-bottom: 30px;;
+}
+
+.upper_content span{
+    width: auto;
+    /* background-color: red; */
+    padding: 5px 10px;
+    border-radius: 10px;;
+    border:1px solid grey;
+}
+
+.middle_content {
+    /* background-color: red; */
+    text-align: center;
+    margin:20px 0;
+
+}
+
+.middle_content h2{
+    margin: 10px 0 ; 
+}
+
+.middle_content h2 span{
+  background: linear-gradient(to bottom, #5311B3 , #CB2CB3 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    /* Optional for cross-browser support */
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+}
+
+
+.middle_content p{
+    margin: 20px 0;
+    color: grey;
+
+}
+
+
+.lower_content {
+    margin-top: 30px;
+    padding: 5px 20px;
+  }
+  
+  .faq_item {
+    border-bottom: 1px solid #2c2c2c;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .faq_question {
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .faq_question:hover {
+    color: #aaa;
+  }
+  
+  .faq_answer {
+    max-height: 0;
+    overflow: hidden;
+    color: grey;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+  }
+  
+  .faq_answer.active {
+    max-height: 200px; /* enough height to show the content */
+    opacity: 1;
+    margin-top: 10px;
+  }
+  
+
+  @media (max-width: 600px) {
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: -15%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(0, 123, 255, 0.35), transparent 70%);
+      filter: blur(80px);
+      z-index: 0;
+    }
+    
+  }

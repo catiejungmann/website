@@ -1,0 +1,244 @@
+.container{
+    padding: 4% 5%;
+    background-color: #15121b;
+    width: 100%;
+    height: 100%;;
+    /* height: 300px;; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.left_container{
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    /* background-color: red; */
+    padding-right: 20px;;
+
+}
+
+.left_container h4{
+    margin-bottom: 20px;
+}
+
+.left_container p{
+    color: gray;
+    width: 80%;
+}
+
+.left_container h5 span{
+  background: linear-gradient(to right, gray, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional for cross-browser support */
+  background-clip: text;
+  color: transparent;
+
+}
+
+.left_container h1 span{
+  background: linear-gradient(to bottom, #5311B3, #CB2CB3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional for cross-browser support */
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+  padding-right: 10px;
+
+}
+
+
+/* .right_container{
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+} */
+
+
+.flex_container{
+    /* background-color: red; */
+    display: flex;
+}
+
+.first{
+    width: 40%;
+}
+
+.group{
+    /* height: 100%; */
+    /* width: 100%; */
+    /* width: 100px; */
+}
+
+.second{
+    width: 20%;
+    text-align: left;
+    /* background-color: black; */
+}
+
+.second h4{
+    margin:0;
+}
+
+.third{
+    width: 40%;
+    display: flex;
+    gap:10px;
+    /* background-color: blue; */
+}
+
+.third h4{
+    margin:0;
+}
+
+.left_container button {
+    margin-top: 30px;
+    border: 4px solid transparent; /* important: border must be transparent */
+    border-radius: 30px; /* optional: rounded corners */
+    background: linear-gradient(black, black) padding-box,
+      /* background inside */ linear-gradient(to bottom, #5311b3, #cb2cb3)
+        border-box; /* gradient border */
+    /* padding: 5px 10px; */
+    
+  }
+
+.downloadImage{
+    width: 240px;
+}
+
+
+.right_container {
+    width: 60%;
+    height: 100%;
+    /* background-color: red;
+     */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+
+
+    /* background-color: red; */
+  }
+
+  .image_holder{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    /* background-color: red; */
+  }
+
+  .first_image{
+    /* position: absolute; */
+    /* top:0; */
+    /* right: 0;; */
+    /* background-color: red; */
+    height: 340px;
+    width: 260px;
+    z-index: 3;
+  }
+
+  .second_image{
+    position: absolute;
+    /* top:0; */
+    height: 310px;
+    width:220px;
+    z-index: 2;
+    left: 120px;
+    top:40px;
+  }
+
+  .third_image{
+    position: absolute;
+    /* top:0; */
+    height: 310px;
+    width:220px;
+    z-index: 1;
+    
+    left: 220px;
+    top:70px;
+  }
+ 
+
+  .image{
+    height: 100%;
+    width: 100%;
+  }
+
+  .gradientContainer{
+    position: absolute;
+    /* width: 900px; */
+    width: 700px;
+    height: 500px;
+    left:0;
+  }
+
+  .gradient{
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 1500px){
+    .gradientContainer{
+      position: absolute;
+      /* width: 900px; */
+      width: 700px;
+      height: 500px;
+      left:10%;
+    }
+    
+  }
+
+
+@media (max-width: 600px) {
+  .container{
+    display: block;
+  }
+  .left_container{
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .right_container{
+    width: 100%;
+    margin: 40px 0;
+    /* background-color: red; */
+
+  }
+
+  .image_holder{
+    width: 100%;
+  }
+
+  .first_image{
+    height: 290px;
+    width: 220px;
+
+  }
+
+  .second_image{
+    height: 260px;
+    width:180px;
+    left: 80px;
+    top:30px;
+  }
+
+  .third_image{
+    height: 260px;
+    width:180px;
+    left: 150px;
+    top:50px;
+  }
+  .gradientContainer{
+    width: 100%;
+    height: 400px;
+    left: -10%;
+  }
+  
+}

@@ -1,0 +1,109 @@
+.container {
+  padding: 4% 5%;
+  background-color: #15121b;
+  width: 100%;
+  /* height: 200px; */
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  /* width: 300px; */
+  /* height: 200px; */
+  border: 2px solid transparent; /* important: border must be transparent */
+  border-radius: 12px; /* optional: rounded corners */
+  background: linear-gradient(black, black) padding-box,
+    /* background inside */ linear-gradient(to bottom, #5311b3, #cb2cb3)
+      border-box; /* gradient border */
+  text-align: center;
+  padding: 40px;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(to bottom, #5311b3, #cb2cb3) border-box;
+  text-align: center;
+  padding: 40px;
+  overflow: hidden; /* Ensure glow stays within bounds */
+}
+
+/* Gradient Glows */
+.box::before,
+.box::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.box::before {
+  background: radial-gradient(circle, #fff 0%, transparent 70%);
+  bottom: -50px;
+  left: -50px;
+}
+
+.box::after {
+  background: radial-gradient(circle, #fff 0%, transparent 70%);
+  bottom: -50px;
+  right: -50px;
+}
+
+/* Ensure text and button are above the glows */
+.box > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.box h2 {
+  font-size: 25px;
+}
+
+.box h2 span{
+  background: linear-gradient(to bottom, #5311B3 , #CB2CB3 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    /* Optional for cross-browser support */
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+}
+
+.box button {
+  border: 4px solid transparent; /* important: border must be transparent */
+  border-radius: 40px; /* optional: rounded corners */
+  background: linear-gradient(black, black) padding-box,
+    /* background inside */ linear-gradient(to bottom, #5311b3, #cb2cb3)
+      border-box; /* gradient border */
+  /* padding: 5px 10px; */
+  
+}
+
+.box button:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.downloadImage{
+    width: 300px;
+}
+
+@media (max-width:600px ) {
+
+    .box{
+        padding: 40px 20px;
+    }
+
+    .downloadImage{
+      width: 220px;
+    }
+}
