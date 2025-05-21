@@ -66,7 +66,7 @@ const Testimonials = () => {
     preview = 3;
     padding_class = "px-80";
   } else if (windowSize.width >= 1600) {
-    preview = 1.4;
+    preview = 3;
     padding_class = "px-80";
   }
 
@@ -126,7 +126,7 @@ const Testimonials = () => {
       <div className={styles.lower_content}>
         <div
           ref={sliderRef}
-          className={`keen-slider ${styles["main_slider"]} ${padding_class}`}
+          className={`keen-slider ${styles["main_slider"]}`}
         >
           <div className={` keen-slider__slide `}>
             <div className={styles.slider_container}>

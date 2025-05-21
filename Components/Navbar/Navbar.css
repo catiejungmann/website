@@ -29,11 +29,15 @@
     text-fill-color: transparent;
   }
 .main_logo_contianer{
+    /* width: 60%; */
     height: 60%;
+    /* background-color: red; */
 }
 
 .main_logo{
     height: 100%;
+    /* width: 100%; */
+    
     /* width: 300px; */
 }
 
@@ -42,4 +46,21 @@
     background: linear-gradient(to bottom, #5311B3, #CB2CB3);
     border:none;
     padding: 6px 20px;
+}
+
+@media (max-width: 600px) {
+.main_logo_contianer{
+    width: 60%;
+    height: 60%;
+    /* background-color: red; */
+}
+
+.main_logo{
+    height: 100%;
+    width: 100%;
+    
+    /* width: 300px; */
+}
+
+    
 }

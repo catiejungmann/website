@@ -30,6 +30,7 @@
   text-align: center;
   padding: 40px;
   overflow: hidden; /* Ensure glow stays within bounds */
+  font-weight: 300;
 }
 
 /* Gradient Glows */
@@ -65,6 +66,7 @@
 
 .box h2 {
   font-size: 25px;
+  font-weight: 300;
 }
 
 .box h2 span{
@@ -77,25 +79,42 @@
     color: transparent;
     font-style: italic;
 }
-
 .box button {
-  border: 4px solid transparent; /* important: border must be transparent */
-  border-radius: 40px; /* optional: rounded corners */
-  background: linear-gradient(black, black) padding-box,
-    /* background inside */ linear-gradient(to bottom, #5311b3, #cb2cb3)
-      border-box; /* gradient border */
-  /* padding: 5px 10px; */
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 12px 24px;
+  width: 340px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(to right, #1c1c1c, #1c1c1c) padding-box,
+              linear-gradient(to right, #5311b3, #cb2cb3) border-box;
+
+  box-shadow: 0 0 15px 2px #cb2cb3; /* glow effect */
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.box button:hover{
-    transform: scale(1.01);
-    cursor: pointer;
+.box button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px 4px #cb2cb3;
+  cursor: pointer;
 }
 
-.downloadImage{
-    width: 300px;
+.downloadImage {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
 }
+
 
 @media (max-width:600px ) {
 
@@ -103,7 +122,14 @@
         padding: 40px 20px;
     }
 
+    .box button{
+      width: 250px;
+    }
+
     .downloadImage{
-      width: 220px;
+      /* width: 220px; */
+      margin-right: 0px;
+      height: 30px;
+      width: 30px;
     }
 }

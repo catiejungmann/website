@@ -43,14 +43,17 @@
 .left_content input{
     padding: 5px 10px;
     border-radius: 10px;
-    background-color: grey;
+    /* background-color: grey; */
+    background-color: #212121;
     color:white;
     border:none;
     margin-right: 10px;
+      outline: none; /* Removes the white border on focus */
+
 }
 
 .left_content input::placeholder{
-    color: white;
+    color: grey;
 }
 
 .left_content button{
@@ -58,6 +61,7 @@
     padding: 5px 10px;
     border-radius: 10px;
     border:none;
+    color: white;
     /* font-size: 12px; */
 }
 
@@ -120,5 +124,16 @@
         justify-content: space-evenly;
 
     }
-    
+    .left_content input{
+    padding: 5px 10px;
+    border-radius: 10px;
+    /* background-color: grey; */
+    background-color: #212121;
+    color:white;
+    border:none;
+    margin-right: 2px;
+      outline: none; /* Removes the white border on focus */
+      width: 150px;
+
+}
 }

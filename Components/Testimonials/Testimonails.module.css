@@ -3,7 +3,7 @@
     background-color: #15121b;
     width: 100%;
     position: relative;
-
+    /* font- */
   }
   
   .upper_content {
@@ -24,6 +24,7 @@
   
   .middle_content h2 {
     margin: 10px 0;
+    font-weight: 300;
   }
 
   .middle_content h2 span{
@@ -138,6 +139,10 @@
         font-size: 40px;
         width: 60%;
     }
+    .slider_container{
+      aspect-ratio: 1/0.2;
+      /* height: 300px; */
+    }
 
     
 }
@@ -152,9 +157,13 @@
 
 
 .slider_container{
-  padding: 20px;
-  height: 200px;
+  /* padding: 20px; */
+  padding: 10% 10%;
+  /* padding-top: 10%; */
+  /* height: 200px; */
+  aspect-ratio: 1/0.60;
   background-color: #211E29;
+  /* background-color: red; */
   /* border-color: grey; */
   /* border-style: solid; */
   /* border: 0px 2px 4px 2px; */
@@ -164,7 +173,15 @@
 .upper_div{
   display: flex;
   gap: 10px;
-  
+}
+
+.middle_div{
+  margin: 10px 0 20px;
+}
+
+.lower_div{
+  /* margin-top: 20px; */
+  font-size: 18px;;
 }
 
 .image_container{

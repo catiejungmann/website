@@ -16,7 +16,7 @@ export default function Home() {
         <Landing/>
         <Ratings/>
         <About/>
-        <Testimonials/>
+        {/* <Testimonials/> */}
         <Question/>
         <Download />
         <Footer />

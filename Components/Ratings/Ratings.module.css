@@ -1,5 +1,5 @@
 .container{
-    padding: 6% 5% 4%;
+    padding: 6% 10% 4%;
     background-color: #15121b;
     width: 100%;
     /* height: 300px;; */
@@ -32,23 +32,29 @@
 }
 
 
-.lower_content{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.lower_content {
+  width: 100%;
+  display: flex;
+  align-items: stretch; /* ⬅ Makes all boxes same height */
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
-.box{
-    width: 30%;
-    padding: 10px;
-    text-align: left;
-    border: 4px solid transparent; /* important: border must be transparent */
-    border-radius: 10px; /* optional: rounded corners */
-    background: linear-gradient(black, black) padding-box,
-      /* background inside */ linear-gradient(to bottom, #5311b3, #cb2cb3)
-        border-box; /* gradient border */
-
+.box {
+  width: 30%;
+  max-width: 500px;
+  /* aspect-ratio: 1 / 1.15;   */
+  /* ⛔ REMOVE THIS LINE */
+  text-align: left;
+  border: 6px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(black, black) padding-box,
+              linear-gradient(to bottom, #5311b3, #cb2cb3) border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2%;
+  box-sizing: border-box;
 }
 
 .box p{
@@ -106,9 +112,17 @@
         }
 
         .box{
+            /* aspect-ratio: 1 / 0.5; Ensures square shape */
             width: 100%;
             margin-bottom: 40px;
+            padding: 30px;
+            /* padding-top: 5%; */
         }
+
+        .box p{
+    font-size: 15px;
+    color: grey;
+}
 
         .upper_content > div{
             width: 100%;
@@ -118,6 +132,22 @@
             top:-50%;
             left:-5% 
         }
+    
+}
+
+@media (min-width: 1500px) {
+    .box p{
+    font-size: 20px;
+    color: grey;
+}
+.box h5{
+    font-size: 30px;;
+}
+.image_container{
+    width: 75px;
+    height: 75px;
+}
+
     
 }
 .blue{

@@ -49,6 +49,7 @@
 
 .middle_content h2{
     margin: 10px 0 ; 
+    font-weight: 300;
 }
 
 .middle_content h2 span{
@@ -100,7 +101,7 @@
   }
   
   .faq_answer.active {
-    max-height: 200px; /* enough height to show the content */
+    max-height: 300px; 
     opacity: 1;
     margin-top: 10px;
   }

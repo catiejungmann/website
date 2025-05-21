@@ -8,11 +8,12 @@
 }
 
 .upper_container{
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: end;
     margin-bottom: 70px;;
     z-index: 2;
+    /* background-color: red; */
 }
 
 
@@ -23,6 +24,7 @@
 .upper_content h2{
     width: 40%;
     font-size: 30px;
+    font-weight: 300;
 }
 
 .upper_content h2 span{
@@ -34,6 +36,7 @@
     background-clip: text;
     color: transparent;
     font-style: italic;
+    font-weight: 300;
 }
 
 .upper_content p{
@@ -41,7 +44,8 @@
 }
 
 .lower_container {
-    background-color: #1e1b26;
+    /* background-color: #1e1b26; */
+    background-color: #211E29;
     padding: 30px;
     border-radius: 20px;
     display: flex;
@@ -60,7 +64,7 @@
   
   .stepNumber {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 300;
     color: white;
     width: 50px;
   }
@@ -127,18 +131,42 @@
 
 
 @media (max-width: 600px) {
+
+  .upper_container{
+    margin-top: 50%;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 0;;
+    /* background-color: red;  */
+   }
+
+  .upper_content{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0;;
+    background-color: rgba(0, 0, 0, 0.8) ;
+    border-radius: 40px;
+    padding: 10px;
+  }
+
+
     .upper_content h2{
-    width: 80%;
+    width: 50%;
     font-size: 25px;
 }
 
 .upper_content p{
     color: gray;
+    /* color: black; */
     font-size: 15px;;
 }
 
 .image_container{
-    width: 50%;
+    /* width: 30%; */
+    /* height: 300px; */
+    height: 40%;
+    /* background-color: red; */
+    width: 100%;
 }
 
 }

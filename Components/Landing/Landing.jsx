@@ -8,7 +8,7 @@ import Image3 from "@/public/Images/Image3.png";
 import Gradient from '@/public/Images/back_gradient.webp';
 
 import Image from "next/image";
-import DownloadImage from "@/public/Images/Download.png";
+import DownloadImage from "@/public/Images/Download2.png";
 
 const Landing = () => {
   return (
@@ -18,8 +18,7 @@ const Landing = () => {
         <h1>By Being <span>Yourself</span></h1>
         <h4>With SYNTEREST</h4>
         <p>
-          We designed a platform for people to find their love without being
-          judged
+          It’s giving cosmic chemistry. Synterest helps you find love that hits on a soul level.
         </p>
         <div className={styles.flex_container}>
           <div className={styles.first}>
@@ -37,7 +36,7 @@ const Landing = () => {
             <Image src={Smily} alt="SMily image" className={styles.smily} />
             <div>
               <h4>Perfect</h4>
-              <p>Matchs</p>
+              <p>Matches</p>
             </div>
           </div>
         </div>
@@ -47,6 +46,7 @@ const Landing = () => {
             alt="Download Image"
             className={styles.downloadImage}
           />
+          Download App
         </button>
       </div>
       <div className={styles.right_container}>
